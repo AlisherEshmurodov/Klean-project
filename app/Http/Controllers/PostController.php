@@ -28,9 +28,6 @@ class PostController extends Controller
     {
 
 
-//        $posts = Post::all();
-//        $posts = Post::where('title', 'title2')->first();
-
 //        $post = Post::where('id', 3);
 //        $post->delete();
 
