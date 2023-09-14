@@ -106,9 +106,9 @@ class PostController extends Controller
 //        $post = DB::table('posts')->find($id);
         return view('posts.show')->with([
             'post' => $post,
-            'recent_posts' => Post::latest()->get()->except($post->id)->take(5),
+            'recent_posts' => Post::latest()->get()->except($post->id)->take(5), // post tableni oxirgi 5 ta qatorini ob keliw
             'tags' => Tag::all(),// post tableni oxirgi 5 ta qatorini ob keliw
-            'categories' => Category::all(),// post tableni oxirgi 5 ta qatorini ob keliw
+            'categories' => Category::all(),
         ]);
     }
 
