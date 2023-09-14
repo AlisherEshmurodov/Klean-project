@@ -81,7 +81,6 @@ class PostController extends Controller
             'contents' => $request->contents,
             'photo' => $path ?? null,
         ]);
-//        $post->save();
 
 
         if (isset($request->tags)) {
