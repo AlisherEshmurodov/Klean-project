@@ -14,7 +14,7 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row align-items-end mb-4">
-{{--                {{ $posts -> links() }}--}}
+                {{ $posts -> links() }}
                 <div class="col-lg-6">
                     <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Latest Blog</h6>
                     <h1 class="section-title mb-3">Oxirgi Postlar</h1>
@@ -28,10 +28,10 @@
                         <div class="position-relative mb-4">
                             <img class="img-fluid rounded w-100" src="/storage/{{$post->photo}}" alt="">
                             <div class="blog-date">
-{{--                                <h4 class="font-weight-bold mb-n1">{{$post->created_at->format('d')}}</h4>--}}
-                                <h4 class="font-weight-bold mb-n1">{{$post->created_at}}</h4>
-{{--                                <small class="text-white text-uppercase">{{$post->created_at->format('M')}}</small>--}}
-                                <small class="text-white text-uppercase">{{$post->created_at}}</small>
+                                <h4 class="font-weight-bold mb-n1">{{$post->created_at->format('d')}}</h4>
+{{--                                <h4 class="font-weight-bold mb-n1">{{$post->created_at}}</h4>--}}
+                                <small class="text-white text-uppercase">{{$post->created_at->format('M')}}</small>
+{{--                                <small class="text-white text-uppercase">{{$post->created_at}}</small>--}}
                             </div>
                         </div>
                         <div class="d-flex mb-2">
@@ -50,7 +50,7 @@
                     </div>
                 @endforeach
 
-{{--                {{ $posts -> links() }}--}}
+                {{ $posts -> links() }}
                 {{--                <div class="col-12">--}}
                 {{--                    <nav aria-label="Page navigation">--}}
                 {{--                        <ul class="pagination pagination-lg justify-content-center mb-0">--}}

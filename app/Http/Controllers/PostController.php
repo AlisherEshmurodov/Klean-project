@@ -44,14 +44,14 @@ class PostController extends Controller
 
 //        Cache::pull('posts');
 
-//        $posts = Post::latest()->paginate(9);
-        $posts = Post::latest()->get();
+        $posts = Post::latest()->paginate(9);
+//        $posts = Post::latest()->get();
 //        Cache::flush();
-        $posts = Cache::remember('posts', 120, function () {
-            return Post::latest()->get();
-//            $posts = Cache::get('posts');
-        });
-        return view('posts.index')->with('posts', $posts);
+//        $posts = Cache::remember('posts', 120, function () {
+//            return Post::latest()->get();
+////            $posts = Cache::get('posts');
+//        });
+        return view('posts.index')->with(['posts'=> $posts]);
     }
 
 
