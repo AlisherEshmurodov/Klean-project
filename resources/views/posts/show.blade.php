@@ -14,6 +14,11 @@
     <!-- Detail Start -->
     <div class="container-fluid py-5">
         <div class="container">
+            @if(session('success'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('success') }}
+                </div>
+            @endif
             <div class="row">
                 <div class="col-lg-8">
                     @auth

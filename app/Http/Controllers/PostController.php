@@ -97,7 +97,7 @@ class PostController extends Controller
 //        UploadBigFile::dispatch($file);
 
 
-        return redirect()->route('posts.index');
+        return redirect()->route('posts.index')->with('success', "Post Created Successfully!");
     }
 
 
@@ -161,7 +161,7 @@ class PostController extends Controller
             }
         }
 
-        return redirect()->route('posts.show', ['post' => $post->id]);
+        return redirect()->route('posts.show', ['post' => $post->id,])->with('success', 'Successfully Updated!');
 
     }
 
@@ -173,7 +173,7 @@ class PostController extends Controller
         }
 
         $post->delete();
-        return redirect()->route('posts.index');
+        return redirect()->route('posts.index')->with('success', 'Successfully Deleted!');
 
     }
 }
