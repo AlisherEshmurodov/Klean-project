@@ -10,6 +10,7 @@
         </x-slot:h1>
     </x-page_header>
 
+
     <!-- Blog Start -->
     <div class="container-fluid py-5">
         <div class="container">
