@@ -14,6 +14,7 @@ class CommentController extends Controller
            'user_id' => auth()->user()->id,
            'body' => $request->comment,
         ]);
+
         $comment->save();
 
         return redirect()->back();
